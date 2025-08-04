@@ -144,7 +144,7 @@ const AnalyticsPage: React.FC = () => {
           {/* 월별 차트 */}
           <Box flex="1 1 400px" minWidth="400px">
             <Paper sx={{ p: 3 }}>
-              <Box sx={{ height: 350 }}>
+              <Box sx={{ height: 400 }}>
                 <MonthlyOffsetChart />
               </Box>
             </Paper>
@@ -153,7 +153,7 @@ const AnalyticsPage: React.FC = () => {
           {/* 비용 절감 차트 */}
           <Box flex="1 1 400px" minWidth="400px">
             <Paper sx={{ p: 3 }}>
-              <Box sx={{ height: 350 }}>
+              <Box sx={{ height: 400 }}>
                 <CostSavingsChart />
               </Box>
             </Paper>

@@ -68,7 +68,7 @@ const CostSavingsChart: React.FC<CostSavingsChartProps> = ({
         }
       }
     },
-    cutout: '60%',
+    cutout: '50%',
   };
 
   return (
@@ -83,10 +83,10 @@ const CostSavingsChart: React.FC<CostSavingsChartProps> = ({
           textAlign: 'center',
         }}
       >
-        <div style={{ fontSize: '18px', fontWeight: 'bold', color: '#4CAF50' }}>
+        <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#4CAF50' }}>
           {((totalSaved / marketPrice) * 100).toFixed(1)}%
         </div>
-        <div style={{ fontSize: '12px', color: '#666' }}>
+        <div style={{ fontSize: '14px', color: '#666', marginTop: '4px' }}>
           절약률
         </div>
       </div>
