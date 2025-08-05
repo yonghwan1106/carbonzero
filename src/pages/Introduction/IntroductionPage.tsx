@@ -207,51 +207,6 @@ const IntroductionPage: React.FC = () => {
             />
           </Stack>
           
-          <Stack direction="row" spacing={2} justifyContent="center" flexWrap="wrap">
-            <Button
-              variant="contained"
-              size="large"
-              startIcon={<PlayArrow />}
-              onClick={handleDemoLaunch}
-              sx={{ 
-                px: 6, 
-                py: 2,
-                fontSize: '1.1rem',
-                fontWeight: 700,
-                background: 'linear-gradient(135deg, #00C851 0%, #00BCD4 100%)',
-                boxShadow: '0 8px 32px rgba(0, 200, 81, 0.3)',
-                '&:hover': {
-                  background: 'linear-gradient(135deg, #00A142 0%, #0097A7 100%)',
-                  boxShadow: '0 12px 48px rgba(0, 200, 81, 0.4)',
-                  transform: 'translateY(-2px)',
-                },
-                transition: 'all 0.3s ease'
-              }}
-            >
-              데모 체험하기
-            </Button>
-            <Button
-              variant="outlined"
-              size="large"
-              startIcon={<LaunchOutlined />}
-              href="https://carbonzero-sigma.vercel.app/"
-              target="_blank"
-              sx={{ 
-                px: 6, 
-                py: 2,
-                fontSize: '1.1rem',
-                fontWeight: 600,
-                borderWidth: 2,
-                '&:hover': {
-                  borderWidth: 2,
-                  transform: 'translateY(-2px)',
-                },
-                transition: 'all 0.3s ease'
-              }}
-            >
-              외부 링크로 보기
-            </Button>
-          </Stack>
         </Box>
 
         {/* 개요 섹션 */}
