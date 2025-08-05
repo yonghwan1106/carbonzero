@@ -644,37 +644,11 @@ const IntroductionPage: React.FC = () => {
             variant="h6"
             sx={{ 
               lineHeight: 1.8, 
-              color: 'text.secondary',
-              mb: 4
+              color: 'text.secondary'
             }}
           >
             모든 주요 기능이 실제처럼 동작하며, KOMIPO 공모전 심사위원들이 직접 체험할 수 있는 완전한 데모를 제공합니다.
           </Typography>
-          
-          <Stack direction="row" spacing={2} justifyContent="center" flexWrap="wrap">
-            <Button
-              variant="contained"
-              size="large"
-              startIcon={<PlayArrow />}
-              onClick={handleDemoLaunch}
-              sx={{ 
-                px: 6, 
-                py: 2,
-                fontSize: '1.1rem',
-                fontWeight: 700,
-                background: 'linear-gradient(135deg, #00C851 0%, #00BCD4 100%)',
-                boxShadow: '0 8px 32px rgba(0, 200, 81, 0.3)',
-                '&:hover': {
-                  background: 'linear-gradient(135deg, #00A142 0%, #0097A7 100%)',
-                  boxShadow: '0 12px 48px rgba(0, 200, 81, 0.4)',
-                  transform: 'translateY(-2px)',
-                },
-                transition: 'all 0.3s ease'
-              }}
-            >
-              지금 바로 체험하기
-            </Button>
-          </Stack>
         </Paper>
       </Container>
     </Box>
