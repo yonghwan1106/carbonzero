@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import MatchingPage from './pages/Matching/MatchingPage';
 import CertificatePage from './pages/Certificates/CertificatePage';
 import AnalyticsPage from './pages/Analytics/AnalyticsPage';
+import IntroductionPage from './pages/Introduction/IntroductionPage';
 
 const theme = createTheme({
   palette: {
@@ -194,7 +195,8 @@ function App() {
       <Router>
         <Layout>
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<IntroductionPage />} />
+            <Route path="/introduction" element={<IntroductionPage />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/matching" element={<MatchingPage />} />
             <Route path="/certificates" element={<CertificatePage />} />

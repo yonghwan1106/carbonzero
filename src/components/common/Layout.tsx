@@ -20,6 +20,7 @@ import {
   Article as CertificateIcon,
   Analytics as AnalyticsIcon,
   Nature as EcoIcon,
+  Info as InfoIcon,
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -30,6 +31,7 @@ interface LayoutProps {
 }
 
 const menuItems = [
+  { text: '프로젝트 소개', icon: <InfoIcon />, path: '/introduction' },
   { text: '대시보드', icon: <DashboardIcon />, path: '/dashboard' },
   { text: '탄소상쇄 매칭', icon: <MatchingIcon />, path: '/matching' },
   { text: '인증서 관리', icon: <CertificateIcon />, path: '/certificates' },
@@ -95,7 +97,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            탄소중립 플랫폼
+            KOMIPO 「혁신 50대 과제」 - CarbonZero Platform
           </Typography>
         </Toolbar>
       </AppBar>
